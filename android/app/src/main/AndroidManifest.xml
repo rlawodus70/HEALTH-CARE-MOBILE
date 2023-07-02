@@ -1,6 +1,26 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 필수 권한 -->   
+    <!-- 위치 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  <!--대략적인 위치-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    <!--정확한 위치-->
+    <!-- 카메라 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 파일 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 선택 권한 -->
+    <!-- 전화 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />              <!-- 전화 걸기-->
+    <!-- 연락처 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />           <!-- 연락처 목록 읽기 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />          <!-- 연락처 목록 쓰기 -->
+    <!-- 마이크 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
 
     <application
       android:name=".MainApplication"

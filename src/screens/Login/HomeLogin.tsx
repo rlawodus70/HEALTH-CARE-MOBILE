@@ -21,8 +21,7 @@ const SCREEN_HEIGHT = Dimensions.get('window').height;
 import KakaoLoginBtn from '../../components/Login/KakaoLoginBtn';
 
 // Enable LayoutAnimation on Android
-UIManager.setLayoutAnimationEnabledExperimental &&
-  UIManager.setLayoutAnimationEnabledExperimental(true);
+UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
 
 type TabSelectorProps = {
   selected: boolean;
